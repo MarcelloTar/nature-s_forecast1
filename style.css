@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(139deg, rgba(0,255,201,1) 7%, rgba(32,162,240,1) 85%);
+}
+.form{
+    width: 20%;
+    height: 55%;
+    background-color: #ffffff60;
+    border-radius: 10px;
+}
+.searchBlock{
+    margin: 50px;
+}
+.searchBlock img{
+    width: 250px;
+    margin-bottom: 25px;
+}
+.city{
+    border: none;
+    border-bottom: 2px solid #ffffff80;
+    background-color: #00000000;
+    width: 100%;
+    color: #ffffffa1;
+    font-size: 18px;
+    
+}
+.city:focus {
+    outline: none;
+}
+.searchBlock-input{
+    color: #ffffffa1;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+ .btn{
+    width: 70%;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid #ffffff80;
+    padding: 5px;
+    margin: 15px 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: #ffffff;
+    font-size: 17px;
+}
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.301);
+}
+.weather{
+    width: 25%;
+    height: max-content; 
+    border-radius: 10px;
+}
+ .dataSys, .dataTemp, .dataWeather, .dataWind, .advice{
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px solid #ffffff80;
+    margin-bottom: 20px;
+    color: rgba(58, 58, 58, 0.801);
+}
+.cityName{
+    margin-right: 20px;
+}
+.dataTemp{
+    justify-content: space-evenly;
+}
+.dataWeather, .dataWind{
+    justify-content: space-around;
+}
+.dataWind, .dataWeather{
+    align-items: center;
+}
+.windSpeed span{
+    font-size: 23px;
+}
+.temp, .tempFeel{
+    text-align: center;
+}
+.temp h2, .tempFeel h2{
+    font-size: 30px;
+}
+.dataWind, .dataWeather{
+    font-size: 25px;
+}
+.advice{
+    text-align: center;
+    flex-direction: column;
+}
+.advice p{
+    font-size: 20px;
+}
+.windDeg{
+    font-size: 45px;
+}
+.none{
+    display: none;
+}
+.icon{
+    width: 75px;
+}
+.country_box {
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    margin-bottom: 5px;
+}
+@media screen and (max-width: 1440px){
+    .form{
+        width: 25%;
+        height: 55%;
+    }
+    .weather{
+        width: 30%;
+    }
+}
+@media screen and (max-width: 1325px){
+    .btn{
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1265px){
+    .form{
+        width: 30%;
+        height: 55%;
+    }
+    .weather{
+        width: 35%;
+    }
+}
+@media screen and (max-width: 1053px){
+    .form{
+        width: 35%;
+        height: 55%;
+    }
+    .weather{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 905px){
+    .form{
+        width: 38%;
+        height: 55%;
+    }
+    .weather{
+        width: 43%;
+    }
+}
+@media screen and (max-width: 835px){
+    .form{
+        width: 40%;
+        height: 55%;
+    }
+}
+@media screen and (max-width: 790px){
+    .btn{
+        width: 77%;
+    }
+}
+@media screen and (max-width: 768px){
+    .form{
+        width: 50%;
+        height: 510px;
+    }
+    .weather{
+        width: 50%;
+        height: 380px;
+    }
+    .wrap{
+        height: 850px;
+        flex-direction: column-reverse;
+        justify-content: center;
+        row-gap: 100px;
+        
+    }
+}
+@media screen and (max-width: 650px){
+    .weather{
+        width: 55%;
+    }
+    .btn{
+        width: 80%;
+        
+    }
+}
+@media screen and (max-width: 605px){
+    .weather{
+        width: 65%;
+    }
+    .form{
+        width: 55%;
+        
+    }
+}
+@media screen and (max-width: 550px){
+    .weather{
+        width: 70%;
+    }
+    .form{
+        width: 60%;
+        
+    }
+}
+@media screen and (max-width: 505px){
+    .weather{
+        width: 80%;
+    }
+    .form{
+        width: 80%;
+        
+    }
+}
+@media screen and (max-width: 320px){
+    .searchBlock{
+        margin: 30px;
+    }
+    .searchBlock img{
+        width: 225px;
+        margin-bottom: 25px;
+    }
+    .weather{
+        width: 95%;
+    }
+    .windSpeed{
+        font-size: 20px;
+    }
+}
