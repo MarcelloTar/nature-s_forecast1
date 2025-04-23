@@ -26,7 +26,7 @@ button.addEventListener('click', () => {
 })
 
 document.querySelector('.form').innerHTML += `
-    <a href="${window.location.origin}/main">gfhfg</a>
+    <a href="/main.html">gfhfg</a>
 ` 
 
 function setUI(data){
